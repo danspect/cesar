@@ -8,6 +8,7 @@ import java.util.Random;
  * Unit test for simple App.
  */
 public class AppTest {
+
     @Test
     public void testCriptografar() {
         Cesar cesar = new Cesar();

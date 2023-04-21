@@ -34,14 +34,13 @@ public class Cesar {
 
     public String[] forcaBruta(String mensagemCriptografada) {
         String[] mensagensPossiveis = new String[27];
-        for(int i = 0; i <= 26; i++){
+        for (int i = 0; i <= 26; i++) {
             mensagensPossiveis[i] = descriptografar(mensagemCriptografada, i);
         }
         return mensagensPossiveis;
     }
 
-    public int gerarDeslocamentoAleatorio(Random random)
-    {
+    public int gerarDeslocamentoAleatorio(Random random) {
         int deslocamento = random.nextInt(26);
         return deslocamento == 0 ? deslocamento + 1 : deslocamento;
     }
