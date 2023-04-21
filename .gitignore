@@ -60,13 +60,3 @@ out/
 gen/
 generated/
 .idea_modules/
-
-# Ignore files in the root of the repository
-# Change this to your specific main class or folder name
-Main.class
-Main.java
-src/
-
-
-
-
