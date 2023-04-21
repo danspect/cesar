@@ -1,0 +1,72 @@
+# Bytecode and executables
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# IDE files
+.metadata
+.project
+.settings/
+.classpath
+.factorypath
+
+# Maven files
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
+mvnw
+mvnw.cmd
+
+# Gradle files
+.gradle/
+build/
+
+# Intellij project files
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# VS Code settings
+.vscode/
+
+# Logs
+*.log
+log/
+logging/
+
+# Javadoc generated files
+/doc/
+
+# Other generated files
+/bin/
+/obj/
+.generated.
+build-generated/
+dist/
+out/
+gen/
+generated/
+.idea_modules/
+
+# Ignore files in the root of the repository
+# Change this to your specific main class or folder name
+Main.class
+Main.java
+src/
+
+
+
+
