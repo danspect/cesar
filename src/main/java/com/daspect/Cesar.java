@@ -40,7 +40,7 @@ public class Cesar {
         return mensagensPossiveis;
     }
 
-    public static int gerarDeslocamentoAleatorio(Random random)
+    public int gerarDeslocamentoAleatorio(Random random)
     {
         int deslocamento = random.nextInt(26);
         return deslocamento == 0 ? deslocamento + 1 : deslocamento;
