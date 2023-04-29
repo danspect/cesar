@@ -41,7 +41,7 @@ public class Cesar {
     }
 
     public int gerarDeslocamentoAleatorio(Random random) {
-        int deslocamento = random.nextInt(26);
-        return deslocamento == 0 ? deslocamento + 1 : deslocamento;
+        int deslocamento = random.nextInt(25) + 1;
+        return deslocamento;
     }
 }

@@ -16,6 +16,7 @@ public class Main {
         int deslocamento = cesar.gerarDeslocamentoAleatorio(random);
         String mensagemCriptografada = cesar.criptografar(mensagem, deslocamento);
 
-        System.out.println(String.format("Mensagem criptografada: %s \nDeslocamento: %d", mensagemCriptografada, deslocamento));
+        System.out.println(
+                String.format("Mensagem criptografada: %s \nDeslocamento: %d", mensagemCriptografada, deslocamento));
     }
 }
