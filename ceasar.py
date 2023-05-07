@@ -16,8 +16,22 @@ def criptografar(mensagem: str, deslocamento: int) -> str:
 
     return mensagem_criptografada
 
+def descriptografar(mensagem_criptografada: str, deslocamento: int) -> str:
+    deslocamento *= -1
+    return criptografar(mensagem_criptografada, deslocamento)
 
-def gerar_deslocamento():
+def forca_bruta(mensagem_criptografada: str) -> dict[int, str]:
+    alfabeto = ascii_letters
+
+    mensagens_possiveis = {}
+
+    for deslocamento in range(1, len(alfabeto) + 1):
+        mensagens_possiveis[deslocamento] = descriptografar(mensagem_criptografada, deslocamento)
+
+    return mensagens_possiveis
+
+
+def gerar_deslocamento() -> int:
     return lambda: random.randint(1, 25)
 
 
