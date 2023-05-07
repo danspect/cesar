@@ -1,21 +1,27 @@
 import random
+from string import ascii_letters
 
 
-def criptografar(mensagem, deslocamento):
-    mensagem_criptografada = []
+def criptografar(mensagem: str, deslocamento: int) -> str:
+    mensagem_criptografada = ""
+    alfabeto = ascii_letters
 
-    for i in range(enumerate(mensagem)):
-        carctere_atual = mensagem[i]
-
-        if carctere_atual.isupper():
-            mensagem_criptografada.append(
-                chr((ord(carctere_atual) + deslocamento - 65) % 26 + 65))
+    for caractere in mensagem:
+        if caractere == " ":
+            mensagem_criptografada += " "
         else:
-            mensagem_criptografada += chr((ord(carctere_atual) +
-                                          deslocamento - 97) % 26 + 97)
+            caractere_criptografado = (alfabeto.index(caractere) + deslocamento) % len(alfabeto)
 
-        return mensagem_criptografada.join()
+            mensagem_criptografada += alfabeto[caractere_criptografado]
+
+    return mensagem_criptografada
 
 
 def gerar_deslocamento():
     return lambda: random.randint(1, 25)
+
+
+if __name__ == "__main__":
+    msg = "A cifra de cesar foi usada por Julio Cesar"
+    msg_criptografada = criptografar(msg, 6)
+    print(f"Mensagem criptografada: {msg_criptografada}\nDeslocamento: {6}")
