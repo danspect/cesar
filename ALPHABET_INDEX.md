@@ -1,3 +1,5 @@
+**Este índice não tem relação com o ASCII**
+
 | LETRA | ÍNDICE | 
 | :---: | :----: |
 |   A   |   1    |
